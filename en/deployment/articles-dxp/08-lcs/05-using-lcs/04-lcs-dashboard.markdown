@@ -21,9 +21,7 @@ this tab, with a drop-down arrow for switching between projects if you have more
 than one. You can also switch between projects from the user menu at the top
 right of the Dockbar. The project view contains a Status table that lists status
 messages for each server in your project. For example, a status message appears
-for a server when the server is offline. Status messages also appear for servers
-when fix packs are available, monitoring is unavailable, the patching tool is
-unavailable, or other events occur that relate to LCS. 
+for a server when the server is offline. Status messages also appear for other events occur that relate to LCS. 
 
 ![Figure 1: The LCS project view shows an overview of your LCS project.](../../../images-dxp/lcs-project-view.png)
 
