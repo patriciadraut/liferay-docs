@@ -45,9 +45,7 @@ Each of these steps corresponds to a step in the wizard:
     ![Figure 4: Select the environment's subscription type, then click *Next*.](../../images-dxp/lcs-onboarding-03.png)
 
 4.  Select whether servers that connect to this environment are part of a 
-    cluster. LCS provides additional tools in clustered environments that help
-    you manage the cluster. For example, clustered environments show
-    cluster-specific metrics, and fix packs apply to all cluster nodes. There
+    cluster. There
     are a few things to keep in mind if you set the environment as clustered: 
 
     -   You can't change this setting after creating the environment.
@@ -72,8 +70,8 @@ Each of these steps corresponds to a step in the wizard:
 
     ![Figure 6: Select whether this is an elastic environment, then click *Next*.](../../images-dxp/lcs-onboarding-05.png)
 
-6.  Enable the LCS services you want to use with servers that connect to this 
-    environment. The following services are available: 
+6.  Enable the LCS service you want to use with servers that connect to this 
+    environment. The following service is available: 
 
     **Liferay Instance Activation:** Enabling this lets LCS activate any 
     @product@ instances that connect to the environment. If you disable this 
@@ -83,22 +81,9 @@ Each of these steps corresponds to a step in the wizard:
     Note that you **must** use LCS for activation of Elastic subscriptions. 
     Otherwise, you don't have to use LCS for activation. 
 
-    **Portal Analytics:** Enabling this lets LCS collect and display performance 
-    metrics for any servers that connect to the environment. This includes page 
-    and portlet load times, JVM garbage collector and memory metrics, and more. 
+    Portal Analytics, Fix Pack Management and Portal Properties Analysis have been removed from the list of available services. For more information about this change, please read [this article](https://help.liferay.com/hc/en-us/articles/360037317691-Liferay-Connected-Services-Feature-Deprecation-Update-March-2020)
 
-    **Fix Pack Management:** Enabling this lets you use LCS to check for and
-    install @product@ fix packs. Note that this also lets LCS determine 
-    installed fix packs. 
-
-    **Portal Properties Analysis:** Enabling this lets LCS compare the current 
-    portal property settings with their default values for any servers that 
-    connect to the environment. Note that LCS doesn't access 
-    [security sensitive properties](/docs/7-2/deploy/-/knowledge_base/d/what-lcs-stores-about-your-liferay-dxp-servers). 
-    Click *Blacklisted Properties* to view and change any additional properties     
-    that are blacklisted from analysis. 
-
-    ![Figure 7: Enable or disable the LCS services you want to use for servers that connect to the environment, then click *Next*.](../../images-dxp/lcs-onboarding-06.png)
+    ![Figure 7: Enable or disable Liferay Instance Activation for servers that connect to the environment, then click *Next*.](../../images-dxp/lcs-onboarding-06.png)
 
 7.  A completed form presents your selections. Review them and make any changes 
     that you want. When you're finished, click *Create Environment*. 
