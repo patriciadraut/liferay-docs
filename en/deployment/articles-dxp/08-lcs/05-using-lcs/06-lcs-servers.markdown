@@ -7,19 +7,18 @@ header-id: managing-lcs-servers
 [TOC levels=1-4]
 
 Clicking a server in the Dashboard or environment view takes you to the server 
-view. Server view provides detailed information about a server, including 
-statistics and performance metrics. To protect your users' privacy, LCS doesn't 
+view. Server view provides detailed information about a server. To protect your users' privacy, LCS doesn't 
 gather, store, or analyze user data. 
 
 Server view is segmented into six tabs: 
 
-**Page Analytics:** Displays metrics on page views and load times.
+**Page Analytics:** This service has been disabled, if you enabled it earlier you can see here the past history for metrics on page views and load times.
 
-**Snapshot Metrics:** Displays application, JVM, and server metrics.
+**Snapshot Metrics:** This service has been disabled, if you enabled it earlier you can see here the past history for application, JVM, and server metrics.
 
-**Fix Packs:** Displays the server's available and installed fix packs.
+**Fix Packs:** This service has been disabled, if you enabled it earlier you can see here the past history for the server's available and installed fix packs.
 
-**Portal Properties:** Displays your portal's properties and their settings.
+**Portal Properties:** This service has been disabled, if you enabled it earlier you can see here the past history for your portal's properties and their settings.
 
 **Details:** Displays general information about your @product@ installation, 
 Java version, and hardware.
@@ -27,11 +26,30 @@ Java version, and hardware.
 **Server Settings:** View or change your server's name, location, and 
 description. You can also unregister the server from LCS. 
 
-| **Note:** LCS only supports Snapshot Metrics for servers running on Tomcat or 
+| **Note:** LCS only supported Snapshot Metrics for servers running on Tomcat or 
 | WebLogic. On other application servers you may see a console message 
 | indicating that LCS doesn't support server metrics for your application 
 | server. You may also see a benign `NullPointerException` for the LCS 
 | `TaskSchedulerServiceImpl` and `ScheduleTasksCommand`. 
+
+## Details
+
+The *Details* tab shows general information about your server. There are three 
+tabs under Details: *Software*, *Java*, and *Hardware*. Each shows information, 
+respectively, about your @product@ installation, Java installation, and 
+hardware. This information is useful to the Liferay Support team in the event 
+you need their assistance. 
+
+![Figure 7: The Details tab shows information about your server.](../../../images-dxp/lcs-server-details.png)
+
+## Server Settings
+
+Finally, the *Server Settings* tab lets you view and edit your server's name,
+location, and description. You can also unregister your server from LCS. 
+
+![Figure 8: You can use the Server Settings tab to give your server a fun name.](../../../images-dxp/lcs-server-settings.png)
+
+The following services have been disabled and are no longer updating, however you can still view previous data if your server was connected while they were active, and if they were enabled in the environment token.
 
 ## Page Analytics
 
@@ -134,20 +152,3 @@ custom property values. To show only the custom values, select only *Show Custom
 Values*. 
 
 ![Figure 6: Click the gear icon to select the type of portal properties to show in the table.](../../../images-dxp/lcs-server-portal-properties.png)
-
-## Details
-
-The *Details* tab shows general information about your server. There are three 
-tabs under Details: *Software*, *Java*, and *Hardware*. Each shows information, 
-respectively, about your @product@ installation, Java installation, and 
-hardware. This information is useful to the Liferay Support team in the event 
-you need their assistance. 
-
-![Figure 7: The Details tab shows information about your server.](../../../images-dxp/lcs-server-details.png)
-
-## Server Settings
-
-Finally, the *Server Settings* tab lets you view and edit your server's name,
-location, and description. You can also unregister your server from LCS. 
-
-![Figure 8: You can use the Server Settings tab to give your server a fun name.](../../../images-dxp/lcs-server-settings.png)
